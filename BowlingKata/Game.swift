@@ -24,8 +24,8 @@ class Game {
          r1 = 10 // score = 10
          r2 = -
          
-         r3 = 10 // score = 10 + 10*2
-         r4 = -
+         r3 = 4 // score = 10 + 4*2
+         r4 = 3 // score = 10 + 4*2 + 3*2
          
          r5 = 3 // score = 10 + 10*2 + 3*3
          r6 = 4 // score = 10 + 10*2 + 3*3 + 4*2
@@ -35,28 +35,45 @@ class Game {
          */
         
         var currentRollInFrame = 0 // 0 or 1
-        var currentFrame = 0 // from 0 to 9
-        var isSpare = false
+        var multipliers = pins.map { _ in 1 }
         
         for (idx, currentPins) in pins.enumerated() {
-            if isSpare {
-                currentScore += currentPins * 2
-                isSpare = false
-            } else {
-                currentScore += currentPins
-            }
+            currentScore += currentPins * multipliers[idx]
             
             if currentRollInFrame == 0 {
-                currentRollInFrame = 1
+                if currentPins == 10 {
+                    strike(idx: idx, multipliers: &multipliers)
+                    currentRollInFrame = 0
+                } else {
+                    currentRollInFrame = 1
+                }
             } else {
                 currentRollInFrame = 0
-                currentFrame += 1
                 let pinsInFrame = currentPins + pins[idx - 1]
-                isSpare = pinsInFrame == 10
+                if pinsInFrame == 10 {
+                    spare(idx: idx, multipliers: &multipliers)
+                }
             }
-            
         }
         return currentScore
+    }
+    
+    private func spare(idx: Int, multipliers: inout [Int]) {
+        let nextIdx = idx + 1
+        if nextIdx < multipliers.count {
+            multipliers[nextIdx] += 1
+        }
+    }
+    
+    private func strike(idx: Int, multipliers: inout [Int]) {
+        let nextIdx = idx + 1
+        if nextIdx < multipliers.count {
+            multipliers[nextIdx] += 1
+        }
+        let nextNextIdx = idx + 2
+        if nextNextIdx < multipliers.count {
+            multipliers[nextNextIdx] += 1
+        }
     }
     
     func roll(_ pins: Int) {

@@ -15,6 +15,76 @@ class GameTests: XCTestCase {
         sut = Game()
     }
     
+    func test_whenAllSpares() {
+        
+        for _ in 0..<10 {
+            sut.roll(4)
+            sut.roll(6)
+        }
+        
+        let score = sut.score()
+        XCTAssertEqual(score, (4 + 6) + (4 * 2 + 6) * 9)
+    }
+    
+    func test_whenAllStrikes() {
+        
+        for _ in 0..<5 {
+            sut.roll(10)
+        }
+        
+        let score = sut.score()
+        XCTAssertEqual(score, 10 + (10 * 2) + (10 * 3) + (10 * 3) + (10 * 3))
+    }
+    
+    func test_whenOneStrike_andThenOneSpare() {
+        
+        sut.roll(10)
+                
+        sut.roll(4)
+        sut.roll(6)
+        
+        sut.roll(6)
+        sut.roll(1)
+        
+        let score = sut.score()
+        XCTAssertEqual(score, 10 + (4 + 4 + 6 + 6) + (6 + 6) + 1)
+    }
+    
+    func test_whenOneStrike_andOneRollAfterStrike() {
+        
+        sut.roll(10)
+                
+        sut.roll(4)
+        
+        let score = sut.score()
+        XCTAssertEqual(score, 10 + (4 + 4))
+    }
+    
+    func test_whenTwoStrikesInRow() {
+        sut.roll(10)
+        
+        sut.roll(10)
+                
+        sut.roll(4)
+        sut.roll(3)
+        
+        let score = sut.score()
+//        XCTAssertEqual(score, (10 + 10 + 4) + (10 + 4 + 3) + (4 + 3))
+        XCTAssertEqual(score, 10 + (10 + 10) + (4 + 4 + 4) + (3 + 3))
+    }
+
+    
+    func test_whenOneStrike() {
+        sut.roll(10)
+        
+        sut.roll(4)
+        sut.roll(3)
+        
+        let score = sut.score()
+//        XCTAssertEqual(score, (10 + 4 + 3) + 4 + 3)
+        XCTAssertEqual(score, 10 + 4 + 4 + 3 + 3)
+    }
+    
     func test_WhenSpareInOtherFrames_thenScoreIsCorrect() {
         sut.roll(3)
         sut.roll(4)
