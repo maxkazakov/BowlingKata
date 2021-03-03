@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B60C9F125EF8AA6005BAC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60C9F025EF8AA6005BAC68 /* AppDelegate.swift */; };
+		9B60C9F325EF8AA6005BAC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60C9F225EF8AA6005BAC68 /* SceneDelegate.swift */; };
+		9B60C9F525EF8AA6005BAC68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60C9F425EF8AA6005BAC68 /* ViewController.swift */; };
+		9B60C9F825EF8AA6005BAC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B60C9F625EF8AA6005BAC68 /* Main.storyboard */; };
+		9B60C9FA25EF8AA8005BAC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B60C9F925EF8AA8005BAC68 /* Assets.xcassets */; };
+		9B60C9FD25EF8AA8005BAC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B60C9FB25EF8AA8005BAC68 /* LaunchScreen.storyboard */; };
+		9B60CA0825EF8AA8005BAC68 /* BowlingKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60CA0725EF8AA8005BAC68 /* BowlingKataTests.swift */; };
+		9B60CA1325EF8AA8005BAC68 /* BowlingKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60CA1225EF8AA8005BAC68 /* BowlingKataUITests.swift */; };
+		9B60CA2425EF8AB7005BAC68 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60CA2325EF8AB7005BAC68 /* Game.swift */; };
+		9B60CA2925EF8ACC005BAC68 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B60CA2825EF8ACC005BAC68 /* GameTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B60CA0425EF8AA8005BAC68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B60C9E525EF8AA5005BAC68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B60C9EC25EF8AA6005BAC68;
+			remoteInfo = BowlingKata;
+		};
+		9B60CA0F25EF8AA8005BAC68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B60C9E525EF8AA5005BAC68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B60C9EC25EF8AA6005BAC68;
+			remoteInfo = BowlingKata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B60C9ED25EF8AA6005BAC68 /* BowlingKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowlingKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B60C9F025EF8AA6005BAC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B60C9F225EF8AA6005BAC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B60C9F425EF8AA6005BAC68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B60C9F725EF8AA6005BAC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B60C9F925EF8AA8005BAC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B60C9FC25EF8AA8005BAC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B60C9FE25EF8AA8005BAC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B60CA0325EF8AA8005BAC68 /* BowlingKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B60CA0725EF8AA8005BAC68 /* BowlingKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingKataTests.swift; sourceTree = "<group>"; };
+		9B60CA0925EF8AA8005BAC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B60CA0E25EF8AA8005BAC68 /* BowlingKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B60CA1225EF8AA8005BAC68 /* BowlingKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingKataUITests.swift; sourceTree = "<group>"; };
+		9B60CA1425EF8AA8005BAC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B60CA2325EF8AB7005BAC68 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9B60CA2825EF8ACC005BAC68 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B60C9EA25EF8AA6005BAC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60CA0025EF8AA8005BAC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60CA0B25EF8AA8005BAC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B60C9E425EF8AA5005BAC68 = {
+			isa = PBXGroup;
+			children = (
+				9B60C9EF25EF8AA6005BAC68 /* BowlingKata */,
+				9B60CA0625EF8AA8005BAC68 /* BowlingKataTests */,
+				9B60CA1125EF8AA8005BAC68 /* BowlingKataUITests */,
+				9B60C9EE25EF8AA6005BAC68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B60C9EE25EF8AA6005BAC68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B60C9ED25EF8AA6005BAC68 /* BowlingKata.app */,
+				9B60CA0325EF8AA8005BAC68 /* BowlingKataTests.xctest */,
+				9B60CA0E25EF8AA8005BAC68 /* BowlingKataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B60C9EF25EF8AA6005BAC68 /* BowlingKata */ = {
+			isa = PBXGroup;
+			children = (
+				9B60C9F025EF8AA6005BAC68 /* AppDelegate.swift */,
+				9B60C9F225EF8AA6005BAC68 /* SceneDelegate.swift */,
+				9B60C9F425EF8AA6005BAC68 /* ViewController.swift */,
+				9B60C9F625EF8AA6005BAC68 /* Main.storyboard */,
+				9B60C9F925EF8AA8005BAC68 /* Assets.xcassets */,
+				9B60C9FB25EF8AA8005BAC68 /* LaunchScreen.storyboard */,
+				9B60C9FE25EF8AA8005BAC68 /* Info.plist */,
+				9B60CA2325EF8AB7005BAC68 /* Game.swift */,
+			);
+			path = BowlingKata;
+			sourceTree = "<group>";
+		};
+		9B60CA0625EF8AA8005BAC68 /* BowlingKataTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B60CA0725EF8AA8005BAC68 /* BowlingKataTests.swift */,
+				9B60CA0925EF8AA8005BAC68 /* Info.plist */,
+				9B60CA2825EF8ACC005BAC68 /* GameTests.swift */,
+			);
+			path = BowlingKataTests;
+			sourceTree = "<group>";
+		};
+		9B60CA1125EF8AA8005BAC68 /* BowlingKataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B60CA1225EF8AA8005BAC68 /* BowlingKataUITests.swift */,
+				9B60CA1425EF8AA8005BAC68 /* Info.plist */,
+			);
+			path = BowlingKataUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B60C9EC25EF8AA6005BAC68 /* BowlingKata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B60CA1725EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKata" */;
+			buildPhases = (
+				9B60C9E925EF8AA6005BAC68 /* Sources */,
+				9B60C9EA25EF8AA6005BAC68 /* Frameworks */,
+				9B60C9EB25EF8AA6005BAC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BowlingKata;
+			productName = BowlingKata;
+			productReference = 9B60C9ED25EF8AA6005BAC68 /* BowlingKata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B60CA0225EF8AA8005BAC68 /* BowlingKataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B60CA1A25EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKataTests" */;
+			buildPhases = (
+				9B60C9FF25EF8AA8005BAC68 /* Sources */,
+				9B60CA0025EF8AA8005BAC68 /* Frameworks */,
+				9B60CA0125EF8AA8005BAC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B60CA0525EF8AA8005BAC68 /* PBXTargetDependency */,
+			);
+			name = BowlingKataTests;
+			productName = BowlingKataTests;
+			productReference = 9B60CA0325EF8AA8005BAC68 /* BowlingKataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B60CA0D25EF8AA8005BAC68 /* BowlingKataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B60CA1D25EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKataUITests" */;
+			buildPhases = (
+				9B60CA0A25EF8AA8005BAC68 /* Sources */,
+				9B60CA0B25EF8AA8005BAC68 /* Frameworks */,
+				9B60CA0C25EF8AA8005BAC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B60CA1025EF8AA8005BAC68 /* PBXTargetDependency */,
+			);
+			name = BowlingKataUITests;
+			productName = BowlingKataUITests;
+			productReference = 9B60CA0E25EF8AA8005BAC68 /* BowlingKataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B60C9E525EF8AA5005BAC68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9B60C9EC25EF8AA6005BAC68 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9B60CA0225EF8AA8005BAC68 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9B60C9EC25EF8AA6005BAC68;
+					};
+					9B60CA0D25EF8AA8005BAC68 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9B60C9EC25EF8AA6005BAC68;
+					};
+				};
+			};
+			buildConfigurationList = 9B60C9E825EF8AA5005BAC68 /* Build configuration list for PBXProject "BowlingKata" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B60C9E425EF8AA5005BAC68;
+			productRefGroup = 9B60C9EE25EF8AA6005BAC68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B60C9EC25EF8AA6005BAC68 /* BowlingKata */,
+				9B60CA0225EF8AA8005BAC68 /* BowlingKataTests */,
+				9B60CA0D25EF8AA8005BAC68 /* BowlingKataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B60C9EB25EF8AA6005BAC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B60C9FD25EF8AA8005BAC68 /* LaunchScreen.storyboard in Resources */,
+				9B60C9FA25EF8AA8005BAC68 /* Assets.xcassets in Resources */,
+				9B60C9F825EF8AA6005BAC68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60CA0125EF8AA8005BAC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60CA0C25EF8AA8005BAC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B60C9E925EF8AA6005BAC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B60C9F525EF8AA6005BAC68 /* ViewController.swift in Sources */,
+				9B60C9F125EF8AA6005BAC68 /* AppDelegate.swift in Sources */,
+				9B60C9F325EF8AA6005BAC68 /* SceneDelegate.swift in Sources */,
+				9B60CA2425EF8AB7005BAC68 /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60C9FF25EF8AA8005BAC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B60CA0825EF8AA8005BAC68 /* BowlingKataTests.swift in Sources */,
+				9B60CA2925EF8ACC005BAC68 /* GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60CA0A25EF8AA8005BAC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B60CA1325EF8AA8005BAC68 /* BowlingKataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B60CA0525EF8AA8005BAC68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B60C9EC25EF8AA6005BAC68 /* BowlingKata */;
+			targetProxy = 9B60CA0425EF8AA8005BAC68 /* PBXContainerItemProxy */;
+		};
+		9B60CA1025EF8AA8005BAC68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B60C9EC25EF8AA6005BAC68 /* BowlingKata */;
+			targetProxy = 9B60CA0F25EF8AA8005BAC68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B60C9F625EF8AA6005BAC68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B60C9F725EF8AA6005BAC68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B60C9FB25EF8AA8005BAC68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B60C9FC25EF8AA8005BAC68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B60CA1525EF8AA8005BAC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B60CA1625EF8AA8005BAC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B60CA1825EF8AA8005BAC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B60CA1925EF8AA8005BAC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B60CA1B25EF8AA8005BAC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BowlingKata.app/BowlingKata";
+			};
+			name = Debug;
+		};
+		9B60CA1C25EF8AA8005BAC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BowlingKata.app/BowlingKata";
+			};
+			name = Release;
+		};
+		9B60CA1E25EF8AA8005BAC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BowlingKata;
+			};
+			name = Debug;
+		};
+		9B60CA1F25EF8AA8005BAC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8743T8Z48;
+				INFOPLIST_FILE = BowlingKataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.BowlingKataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BowlingKata;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B60C9E825EF8AA5005BAC68 /* Build configuration list for PBXProject "BowlingKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B60CA1525EF8AA8005BAC68 /* Debug */,
+				9B60CA1625EF8AA8005BAC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B60CA1725EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B60CA1825EF8AA8005BAC68 /* Debug */,
+				9B60CA1925EF8AA8005BAC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B60CA1A25EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B60CA1B25EF8AA8005BAC68 /* Debug */,
+				9B60CA1C25EF8AA8005BAC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B60CA1D25EF8AA8005BAC68 /* Build configuration list for PBXNativeTarget "BowlingKataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B60CA1E25EF8AA8005BAC68 /* Debug */,
+				9B60CA1F25EF8AA8005BAC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B60C9E525EF8AA5005BAC68 /* Project object */;
+}
